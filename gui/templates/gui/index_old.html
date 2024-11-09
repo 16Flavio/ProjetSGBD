@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <style>
+        .my_label{
+            color:red;
+            font-size : 20px
+        }
+        .my_secondary_label{
+            color:blue;
+            font-size : 20px
+        }
+    </style>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <title>RAQTOUR</title>
+</head>
+<body>
+
+<h1>Bienvenue sur RAQTOUR</h1>
+<h2>Liste des tournois</h2>
+<form method="POST" action="/save/">
+    {% csrf_token %}
+
+    <table>
+        <tbody>
+        <tr>
+            <td><label class="my_label">Nom</label></td>
+            <td><input type = "text" name="customer_name"></td>
+        </tr>
+        <tr>
+            <td><label class="my_secondary_label">Age</label></td>
+            <td><input type = "text" name="customer_name"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit" style ="background:green;display:block;margin-top:15px;margin-bottom:15px;font-size : 20px;width:100%;color:white;">Save</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+<a href="/calendrier">Calendrier</a>
+</body>
+</html>

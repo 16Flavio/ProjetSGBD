@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%  extends "gui/index.html" %}
+{%  load static %}
+
+{% block main_content %}
+    <main role="main">
+<div class="jumbotron">
+    <div class="container">
+        <img src="{%  static '/logo.png' %}" class="rounded float-start" alt="logo" height="200" style="margin-right:20px;">
+        <h1 class="display-4">Bonjour, cher joueur !</h1>
+        <p>Bienvenue sur RAQTOUR ! Que vous soyez un as du service ou un as du sourire, cette plateforme est là pour organiser vos tournois amicaux sans prise de tête !</p>
+        <p>Planifiez, jouez, et partagez des moments inoubliables entre passionnés. À vos raquettes, prêts, partez !</p>
+        <button type="button" class="btn btn-primary">Découvrir les tournois en cours</button>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <h2>Des tournois pour tous !</h2>
+            <p>Que vous soyez un débutant cherchant à s'amuser ou un compétiteur aguerri,
+                nos tournois s'adaptent à tous les niveaux.
+                Ici, chacun trouve sa place et l'occasion de briller sur le terrain,
+                tout en partageant de bons moments !</p>
+    </div>
+    <div class="col">
+      <h2>Meilleurs joueurs de la semaine</h2>
+        <p>Voici les joueurs qui ont fait sensation cette semaine : </p>
+            <ul>
+                <li>Joueur 1</li>
+                <li>Joueur 2</li>
+                <li>Joueur 3</li>
+            </ul>
+    </div>
+    <div class="col">
+      <h2>Qui sommes-nous ?</h2>
+        <p>Chez RAQTOUR, nous sommes une communauté de passionnés de tennis et de badminton,
+            dédiée à organiser des tournois amicaux où la convivialité et la compétition se rencontrent !
+            Notre mission ? Créer des moments inoubliables, un match à la fois, pour les joueurs de tous niveaux.
+            Rejoignez-nous et faites partie de cette aventure sportive !</p>
+    </div>
+      <hr>
+  </div>
+    </main>
+<footer class="container">
+    <p>Equipe RAQTOUR</p>
+</footer>
+{% endblock %}
